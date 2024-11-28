@@ -1,0 +1,17 @@
+<%- include('./Partials/header'); -%> 
+
+<%- include('./Partials/main_nav'); -%> 
+
+<div class="container my-5"> <!-- main container with top and bottom margin (my-5) to center the content horizontally and add spacing vertically -->
+    <div class="text-center"> <!-- centers all the content inside this div horizontally -->
+        <h1 class="display-4" style="color: #1a73e8;">Welcome to Your Workout Tracker!</h1> <!-- large display style and custom blue color -->
+        <p class="lead mb-4" style="color: #555;">Track your fitness journey, analyze your progress, and achieve your goals!</p> <!--used lead class for emphasis and bottom margin (mb-4) for spacing -->
+        <div class="mt-5"> <!-- adds a top margin to separate this section from the cards above -->
+            <h3 style="color: #1a73e8;">Stay Consistent, Stay Strong!</h3> <!-- heading with blue color -->
+            <p class="text-muted">"The only bad workout is the one you didn't do."</p> <!-- quote with muted (light grey) text style -->
+            <a href="/workoutlist/add" class="btn btn-outline-primary btn-lg" style="border-radius: 12px;">Start Now</a> 
+        </div> 
+    </div> 
+</div> 
+
+<%- include('./Partials/footer'); -%> 
