@@ -55,7 +55,7 @@ router.get('/logout', function (req, res, next) {
 /* GET register page. */
 router.get('/register', function (req, res, next) {
   if (!req.user) {
-    res.render('auth/register', {
+    res.render('Auth/register', {
       title: 'Register',
       message: req.flash('registerMessage'),
       displayName: req.user ? req.user.displayName : ''
@@ -81,7 +81,7 @@ router.post('/register', function (req, res, next) {
       } else {
         req.flash('registerMessage', 'Registration Error: ' + err.message);
       }
-      return res.render('auth/register', {
+      return res.render('Auth/register', {
         title: 'Register',
         message: req.flash('registerMessage'),
         displayName: req.user ? req.user.displayName : ''
